@@ -1,0 +1,68 @@
+.menu-bento {
+  
+  padding: 3em;
+  
+  @include mx-tablet {
+    padding: 10px 0 0 0;
+  }
+  
+  .menu-bento__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    @include mx-desktop {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+    
+  }
+  
+  .menu-bento__box {
+    background: $color-5;
+    color: $color-secondary;
+    padding: 3em;
+    margin: 2em;
+    max-width: 600px;
+    text-align: center;
+    
+    @include mx-desktop {
+      margin: 0 0 20px 0 !important;
+    }
+    
+    @include mx-tablet {
+      padding: 2em 1em;
+      margin: 0 0 10px 0 !important;
+    }
+    
+    &:hover {
+      color: $color-contrast;
+      background: $color-primary;
+    }
+    
+    .menu-bento__copy {
+      text-align: center;
+      margin: 1.3em;
+    }
+
+    .menu-bento__heading {
+      @include myfontsizes(h3); 
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    .menu-bento__cta {
+      background: $color-secondary;
+      color: $color-contrast;
+      
+      &:hover {
+        background: $color-secondary !important;
+        transform: scale(1.05,1.05);
+      }
+      
+    }
+    
+  }
+  
+}

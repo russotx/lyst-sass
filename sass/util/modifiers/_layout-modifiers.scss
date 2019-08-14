@@ -1,0 +1,71 @@
+.row--full-bleed {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+
+.col--full-bleed {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+
+// To simulate content overlapping sections without messing with margins: 
+// place this class on the row and place the row at the bottom of the section it's supposed to simulate overlapping
+.overlap__above--primary {
+  background-image: linear-gradient(180deg,transparent 0%,transparent 30%,$color-primary 30%,$color-primary 100%);
+}
+.overlap__above--secondary{
+  background-image: linear-gradient(180deg,transparent 0%,transparent 30%,$color-secondary 30%,$color-secondary 100%);
+}
+
+
+/*--------------------------------------------------------------------------------
+    VISIBILITY
+--------------------------------------------------------------------------------*/
+.phone--hidden {
+  @include mx-phone {
+    display: none;
+  }
+}
+
+.tablet--hidden {
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile--hidden {
+  @include mx-desktop {
+    display: none;
+  }
+}
+
+.desktop--hidden {
+  @include mn-desktop {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------------------------
+    LAYOUT SECTIONS COLOR
+--------------------------------------------------------------------------------*/
+
+.bg--primary {
+   background-color: $color-primary; 
+}
+.bg--secondary {
+  background-color: $color-secondary;
+}
+.bg--contrast {
+  background-color:  $color-contrast;
+}
+.bg--3 {
+  background-color: $color-3;
+}
+.bg--4 {
+  background-color: $color-4;
+}
+.bg--5 {
+  background-color: $color-5;
+}

@@ -1,0 +1,34 @@
+%button {
+  display: inline-block;
+  font-family: $button-font;
+  font-size: $font-size-sm;
+  letter-spacing: 2px;
+  margin: .5em auto 2em;
+  padding: .75em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: $button-transition; 
+  @include shadow-tile;
+  &:hover {
+    transform: scale($button-hover-scale);
+    transition: $button-transition; 
+  }
+}
+
+.button--primary {
+  @extend %button;
+  color: $color-contrast;
+  background: $color-primary;
+}
+
+.button--secondary {
+  @extend %button;
+  color: $color-contrast;
+  background: $color-secondary;
+}
+
+.button--alt7 {
+  @extend %button;
+  color: $color-secondary;
+  background: $color-7;
+}

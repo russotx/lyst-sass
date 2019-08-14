@@ -1,0 +1,13 @@
+.gform-wired {
+  @include gform-wireframe(transparent,$color-contrast,4px,40px,$color-contrast, #fff9f1,$color-secondary,center);
+  @include gform-unmargin;
+  font-family: $font-stack-sans;
+}
+.gform-wired .gform_confirmation_message {
+  font-weight: bold;
+  padding: 3em 0;
+  @include rfs(1.5rem);
+}
+.gform-wired .gform_confirmation_wrapper {
+  padding: 3em 0;
+}

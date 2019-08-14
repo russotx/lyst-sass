@@ -1,0 +1,12 @@
+.form-contact-us {
+  @include gform-wireframe($color-7, $color-secondary, 2px, 0, $color-secondary, $color-secondary, $color-7, center);
+  @include gform-unmargin;
+  margin-right: 2em;
+  @include mx-desktop {
+    margin: 0 auto 30px auto !important;
+  }
+}
+
+
+
+

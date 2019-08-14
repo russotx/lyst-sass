@@ -1,0 +1,179 @@
+/*		
+		for responsive font-sizing use rfs
+
+		.title {
+			@include responsive-font-size(4rem); // OR @include responsive-font-size(64px); OR @include rfs(64);
+		}
+
+*/
+
+
+
+%headings {
+	line-height: 1;
+}
+%subheads {
+	line-height: 1;
+}
+%headings + %headings {
+	margin-top: 2rem;
+	font-family: $subhead-font;
+}
+
+//--headings
+h1 {
+	@include rfs($h1-font-size);
+	color: inherit; 
+	font-family: $heading-font;
+	font-weight: $heading-font-weight;
+	text-transform: uppercase;
+}
+h2 {
+	@include rfs($h2-font-size);
+	color: inherit; 
+	font-family: $heading-font;
+	font-weight: $heading-font-weight;
+	text-transform: uppercase;
+}
+h3 {
+	@include rfs($h3-font-size);
+	color: inherit; 
+	font-family: $heading-font;
+	font-weight: $heading-font-weight;
+	text-transform: uppercase;
+}
+
+//--typically subheadings
+h4 {
+	@include rfs($h4-font-size);
+	color: inherit; 
+	font-family: $subhead-font;
+	font-weight: $subhead-font-weight;
+	text-transform: uppercase;
+} 
+h5 {
+	@include rfs($h5-font-size);
+	color: inherit; 
+	font-family: $subhead-font;
+	font-weight: $subhead-font-weight;
+	text-transform: uppercase;
+}
+h6 {
+	@include rfs($h6-font-size);
+	color: inherit; 
+	font-family: $subhead-font;
+	font-weight: $subhead-font-weight;
+	text-transform: uppercase;
+}
+
+//--body copy and links
+p {
+	@include rfs($p-font-size);
+	font-family: $copy-font;
+	font-weight: $copy-font-weight;
+	font-size: $copy-font-size;
+	color: inherit;
+}
+
+a {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+.tagline {
+	font-family: $tagline-font;
+	text-transform: uppercase;
+}
+
+.copy--light-mode {
+	@include dark-text-on-light;
+}
+
+.copy--dark-mode {
+	@include light-text-on-dark;
+}
+
+.cta--primary {
+	background: $color-primary;
+	color: $color-contrast;
+	font-weight: $cta-font-weight;
+	text-transform: uppercase;
+	padding: 1em 2em;
+}
+
+.cta--primary-wireframe {
+	color: $color-primary;
+	background: transparent;
+	border: solid 1px $color-primary;
+	font-weight: $cta-font-weight;
+	text-transform: uppercase;
+	padding: 1em 2em;
+}
+
+/* %headings = h1 - h6 */
+
+h1, h2, h3 {
+	@extend %headings !optional;
+}
+
+h4, h5, h6 {
+	@extend %subheads !optional;
+}
+
+h2 + h1 {
+	margin-top: -.5em;
+}
+
+
+/* emphasized headings are in script font 
+		-- color is not affected as it is determined by the strong tag */
+%headings em {
+	font-family: $font-stack-script;
+	font-weight: normal;
+	text-transform: none;
+}
+
+%headings > em {
+	font-size: 140%;
+	line-height: 1;
+}
+
+%headings strong {
+	font-weight: normal;
+	color: $font-color-alt;
+}
+
+%headings > em ~ strong {
+	font-size: 200%;
+	letter-spacing: 3px;
+	line-height: .6;
+	@include mx-phone {
+		font-size: 170%;
+	}
+}
+
+/* strong headings change color to stand out depending on their background */
+.bg--light %headings strong {
+	color: $color-secondary;
+}
+
+.bg--pattern %headings strong {
+	color: $color-contrast;
+}
+
+.bg--wood %headings strong {
+	color: $color-6; 
+}
+
+.bg--primary %headings strong {
+	color: $color-contrast;
+}
+
+.bg--secondary %headings strong {
+	color: $color-contrast;
+}
+
+
+

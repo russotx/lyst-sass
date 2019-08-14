@@ -1,0 +1,134 @@
+/* AMENITIES 
+-------------------------------------------------------*/
+
+#top-amenities-blurbs h4 {
+  margin-top: 1em;
+}
+
+#amenities-list-section li {
+    list-style: none;
+    padding:20px 0px 20px 0px!important;
+    border-bottom: solid 1px $color-contrast;
+}
+
+#amenities-list-section strong {
+    color:#1aa69c;
+}
+
+.open-all, .close-all {
+    cursor:pointer;
+    color: $color-5;
+}
+
+.open-all:hover, .close-all:hover {
+    color: $color-contrast !important;
+    transition: 0.4s;
+}
+
+body .et_pb_row .et_pb_column .et_pb_blurb.amenities-blurb {
+    border-bottom: solid 2px $color-5;
+    position: relative;
+    padding: 0;
+    transition:all ease 0.3s;
+    margin-bottom:5px;
+}
+
+body .et_pb_row .et_pb_column .et_pb_blurb.amenities-blurb:hover {
+    border-bottom: solid 2px $color-contrast;
+}
+
+
+
+body .et_pb_row .et_pb_column .et_pb_blurb.amenities-blurb.active {
+    border-bottom: solid 2px $color-contrast;
+}
+
+body .et_pb_row .et_pb_column .et_pb_blurb.amenities-blurb .et_pb_blurb_content {
+	max-width:100%;
+}
+
+.amenities-blurb {
+  padding: 1rem 0 !important;
+}
+
+.amenities-blurb:before {
+    content: " ";
+    position: absolute;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    transition: all ease 0.3s;
+    -webkit-clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+    clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+    background: $color-5;
+    margin-top: 2.2rem;
+}
+
+.amenities-blurb:hover:before {
+  background: $color-contrast;
+}
+
+.amenities-blurb.active:before {
+	transform:rotate(135deg);
+  background: $color-contrast;
+} 
+
+.amenities-blurb .et_pb_main_blurb_image {
+    position: absolute;
+    top:10px;
+}
+
+.amenities-blurb .et_pb_blurb_container {
+    display: block;
+    padding: 0;
+}
+
+.amenities-blurb h4 {
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.amenities-blurb .et_pb_blurb_description {
+  overflow: hidden;
+  height: 1px;
+}
+
+.amenities-blurb p {
+	animation: fadeDown 0.4s ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(-10px);
+  line-height:1.8em;
+}
+
+// .amenities-blurb.active p {
+//     display: block;
+// }
+
+.amenities-blurb.active .et_pb_blurb_description {
+  height: auto;
+  padding: .5em 2em;
+}
+
+@keyframes fadeDown {
+	0% {
+		transform:translateY(-10px);
+		opacity:0;
+	}
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+.fas {
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    width: 10%;
+    float: left;
+}
+

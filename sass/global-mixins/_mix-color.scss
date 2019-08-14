@@ -1,0 +1,38 @@
+//--COLORS
+
+//----shadows
+@mixin shadow-tile() {
+    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+//----gradients
+
+@mixin gradient-brand-primary($primary-direction) {
+    background-image: linear-gradient($primary-direction, $color-primary-darker, $color-primary);
+}
+
+@mixin text-gradient-brand-primary($primary-direction) {
+    @include gradient-brand-primary($primary-direction);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+//----color combos
+
+@mixin dark-text-on-light() {
+    color: $color-dark;
+    background-color: $color-light;
+}
+
+@mixin light-text-on-dark() {
+    color: $color-light;
+    background-color: $color-dark;
+}
+
+@mixin text($text-shade) {
+    color: if($text-shade == light, $color-light, $color-dark);
+    background-color: if($text-shade == light, $color-dark, $color-light);
+    border-color: if($text-shade == light, $color-light, $color-dark);
+}

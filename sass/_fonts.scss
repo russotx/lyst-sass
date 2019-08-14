@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------------------------
+    --LOAD FONTS HERE--
+    uses the easy-font-face-mixin
+    
+    @params: desired font name, font filename, font weight
+    --format is detected and added based on file type in filename
+--------------------------------------------------------------------------------*/
+
+
+@include font("Nimbus Sans","NimbusSanL-Reg.otf",normal);
+@include font("Nevis Bold","nevis 2.ttf",normal);
+@include font("Walker","Walker Regular.otf",normal);
+@include font("Aurora Aged","Aurora Aged.otf",normal);

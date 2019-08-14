@@ -1,0 +1,12 @@
+@import 'gform-contact';
+@import 'gform-wired';
+@import 'gform-tour';
+
+.gform_confirmation_message {
+  font-weight: bold;
+  padding: 3em 0;
+  @include rfs(1.5rem);
+}
+.gform_confirmation_wrapper {
+  padding: 3em 0;
+}

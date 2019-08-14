@@ -1,0 +1,30 @@
+/*
+Theme Name: child
+Template: Divi
+Author: Catalyst
+Version: 2.0
+Updated: 2019-08-14 
+*/
+// RFS Config
+$rfs-factor: 60;
+$rfs-base-font-size: 1rem;
+
+@import 'easy-font-face-mixin';
+@import 'fonts';
+
+// RFS responsive font sizing uses calc() to make dynamic 
+@import "../node_modules/rfs/scss";
+
+// global variables for use in all files
+@import 'globalvars';
+@import 'mixins';
+@import 'placeholders';
+
+// The Tier2 Template styles for existing landing pages etc
+// @import 'vendor/tier2template';
+
+@import 'theme';
+@import 'layout';
+@import 'components';
+@import 'util';
+

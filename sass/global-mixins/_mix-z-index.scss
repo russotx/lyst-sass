@@ -1,0 +1,38 @@
+//--Z-INDEXES
+
+@mixin bring-front {
+    z-index: 9999;
+}
+@mixin send-back {
+    z-index: 0;
+}
+@mixin bury {
+    z-index: -10;
+}
+@mixin z-top {
+    z-index: 100;
+}
+@mixin z-middle {
+    z-index: 50;  
+}
+@mixin z-bottom {
+    z-index: 1;
+}
+@mixin z-top--front {
+    z-index: 99;
+}
+@mixin z-top--middle {
+    z-index: 75;
+}
+@mixin z-top--bottom {
+    z-index: 51;
+}
+@mixin z-middle--top {
+    z-index: 49;
+}
+@mixin z-middle--middle {
+    z-index: 25;
+}
+@mixin z-middle--bottom {
+    z-index: 2;
+}

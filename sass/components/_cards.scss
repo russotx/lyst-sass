@@ -1,0 +1,33 @@
+.card__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.card {
+  border: solid 4px $color-7;
+  background: $color-7;
+  border-radius: 10px;
+  margin: 2em !important;
+  overflow: hidden;
+  padding: 0 0;
+  width: 26%;
+  min-width: 235px;
+}
+
+.card h3 {
+  color: $color-secondary;
+  line-height: .8;
+  padding: 1.5rem 1.5rem 0;
+  margin: 0 0 1rem;
+}
+
+.card h6 {
+  color: $color-primary;
+  line-height: 1.2;
+  padding: 0 1.5rem 1.5rem;
+  margin: 1rem 0 0;
+}
+

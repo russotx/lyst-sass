@@ -1,0 +1,114 @@
+.no-break {
+  white-space: nowrap;
+}
+
+//--h: heading 
+.h--primary {
+  %headings { 
+    color : $color-primary;
+  }
+}
+.h--secondary{
+  %headings { 
+    color : $color-secondary;
+  }
+}
+.h--contrast {
+  %headings { 
+    color : $color-contrast;
+  }
+}
+
+//-- heading color based on background
+.bg--primary %headings {
+	color: $color-secondary;
+}
+
+.bg--light %headings {
+	color: $color-primary;
+}
+
+.bg--secondary %headings {
+	color: $color-primary;
+}
+
+//--sh : subhead
+.sh--primary {
+  %subheads { 
+    color : $color-primary;
+  }
+}
+.sh--secondary {
+  %subheads { 
+    color : $color-secondary;
+  }
+}
+.sh--contrast {
+  %subheads { 
+    color : $color-contrast;
+  }
+}
+
+.text--accent {
+  font-family: $font-stack-script;
+  text-transform: none;
+}
+
+.text--full-bleed {
+  max-width: none;
+  padding: 0;
+}
+
+//-- Body Copy 
+.bg--primary p {
+	color: $color-contrast;
+}
+
+.bg--light p {
+	color: $color-primary;
+}
+
+.bg--secondary p {
+	color: $color-contrast;
+}
+
+.text--left-centered {
+  max-width: none;
+  p {
+      margin-left: 20%;
+      margin-right: 20%;
+  }
+  @include mn-desktop {
+    %headings {
+      margin-left: 20%;
+    }
+    ul {
+      margin-left: 20%;
+      margin-bottom: 1em;
+    }
+  }
+  @include mx-desktop {
+    .et_pb_text_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+.text--jumbo {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @include mx-phone {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    h1, h2, h3 {
+      font-size: 185%;
+    }
+  }
+}
+
+.tagline strong {
+  line-height: .3;
+}

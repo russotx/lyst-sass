@@ -1,0 +1,143 @@
+//    override Divi sytles and parent theme set IDs    
+//    TODO: decide whether an of  this is needed or can be achieved via 
+//					theme settings or template changes.
+
+
+header#main-header:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65) -20%, transparent 100%);
+	width: 100%;
+	height: 150%;
+}
+
+.menu__link--standout:after {
+	@include mn-desktop {
+		content: '';
+		position: absolute;
+		top: -1em;
+		background: $color-secondary;
+		width: 120%;
+		height: 3em;
+		left: -10%;	
+	}
+}
+
+#sidebar {
+	display: none;
+}
+
+.et_pb_text {
+	@extend %theme-text-options !optional;
+	@include mx-desktop {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// TESTING
+.et_pb_section:not(:nth-of-type(2)) .et_pb_row:first-of-type:not(:last-of-type) .et_pb_text {
+	padding-bottom: 0;
+}
+// TESTING
+.et_pb_text:not(:last-of-type) {
+	padding-bottom: 0;
+}
+
+.et_pb_column_4_4 {
+	@extend %theme-single-col-row !optional;
+}
+
+@include mx-desktop {
+	.et_pb_section_1.et_pb_section {
+		padding: 0
+	}
+}
+
+// remove top padding for text under the hero images.
+.et_pb_section_1 .et_pb_text {
+	padding-top: 0;
+	padding-bottom: 3em;
+} 
+
+.divi__grid-gallery .et_pb_gallery_items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	@include mx-phone {
+		justify-content: center;
+	}
+}
+
+
+
+#et_mobile_nav_menu .select_page {
+	display: none!important;
+}
+
+#logo { 
+	@include mx-desktop {
+		float: left;
+		max-width: 50%!important;
+		max-height: none!important;
+	}
+}
+
+
+.et_header_style_split #et_mobile_nav_menu {
+	float: right;
+}
+
+.mobile_menu_bar:before {
+	color: $color-secondary !important;
+	font-size: 7em!important;
+	top: .23rem;
+}
+
+#et_mobile_nav_menu,
+#et-top-navigation {
+	position: static!important;
+}
+
+.mobile_menu_bar {
+	position: absolute!important;
+	top: 50%!important;
+	transform: translateY(-50%)!important;
+	padding: 0!important;
+	}
+
+ul#mobile_menu {
+	top: 19vw!important;
+	background-color: $color-7 !important;
+}
+
+ul#mobile_menu li a {
+	color: $color-primary;
+}
+
+ul#mobile_menu li {
+	&:hover {
+		background: $color-secondary;
+	}
+	&:hover a {
+		color: $color-contrast;
+	}
+	// &.menu-item-has-children a {
+	// 	display: none;
+	// }
+	// &.menu-item-has-children ul.sub-menu {
+	// 	padding-left: 0;	
+	// }
+
+}
+
+.et_header_style_split .mobile_menu_bar {
+	top: 0;
+}
+
+.et_mobile_menu {
+	border-top: 3px solid #03345F!important;
+}

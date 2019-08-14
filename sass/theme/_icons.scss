@@ -1,0 +1,7 @@
+.icon_phone {
+  &:before {
+    content: "\e090";
+    padding: 5px;
+    font-family: $font-fam-eticons;
+  }
+}

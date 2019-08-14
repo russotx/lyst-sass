@@ -1,0 +1,85 @@
+/*---------------------------------------------------------------
+    Fallback Fonts
+---------------------------------------------------------------*/
+$base-sans-stack: Helvetica, Arial, Lucida, sans-serif;
+$base-serif-stack: Georgia, Times, "Times New Roman", serif;
+$base-script-stack: Impact;
+
+/*---------------------------------------------------------------
+    CHANGE THESE FONTS TO MATCH THE BRAND GUIDE
+---------------------------------------------------------------*/
+$font-fam-sans: "Montserrat";
+$font-fam-sans-alt: "Gotham";
+$font-fam-serif: "Georgia";
+$font-fam-serif-alt: "Times New Roman";
+$font-fam-script: "Brownhill";
+$font-fam-eticons: "ETmodules";
+
+$font-stack-sans: $font-fam-sans, $base-sans-stack;
+$font-stack-sans-alt: $font-fam-sans-alt, $base-sans-stack;
+$font-stack-serif: $font-fam-serif, $base-serif-stack;
+$font-stack-serif-alt: $font-fam-serif-alt, $base-serif-stack;
+$font-stack-script: $font-fam-script, $base-script-stack;
+
+$heading-font: $font-stack-serif;
+$subhead-font: $font-stack-sans-alt;
+$copy-font: $font-stack-sans;
+$fancy-font: $font-stack-script;
+$button-font: $font-stack-sans-alt;
+$tagline-font: $font-stack-sans-alt;
+
+/* ---------------------------------------------------------------
+    FONT SIZES
+      Generally these font size settings don't need to change 
+      unless site needs more dramatic font size differences 
+------------------------------------------------------------------*/
+
+// rfs-factor determines how much fonts scale based on screen size. 
+// The higher the number the more they change size 
+$rfs-factor: 3;
+
+$font-size-base: 1rem !default;
+
+$font-size-xxs: ($font-size-base * .5) !default;
+$font-size-xs: ($font-size-base * .65) !default;
+$font-size-sm: ($font-size-base * .875) !default;
+$font-size-med: ($font-size-base * 1) !default;
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-xl: ($font-size-base * 1.75) !default;
+$font-size-xxl: ($font-size-base * 2.25) !default;
+$font-size-xxxl: ($font-size-base * 3.25) !default;
+$font-size-huge: ($font-size-base * 5) !default;
+
+//----headings
+$headings: h1,h2,h3;
+$h1-font-size: $font-size-xxxl !default; 
+$h2-font-size: $font-size-xxxl !default; 
+$h3-font-size: $font-size-xxl !default; 
+
+//----subheads
+$subheads: h4,h5,h6;
+$h4-font-size: $font-size-xl !default;
+$h5-font-size: $font-size-lg !default;
+$h6-font-size: $font-size-base !default;
+
+//----copy
+$body: p,li;
+$p-font-size: $font-size-base !default;
+$copy-font-size: $font-size-base !default;
+
+//----weights
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          500 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$heading-font-weight: $font-weight-normal !default;
+$subhead-font-weight: $font-weight-normal !default;
+$copy-font-weight: $font-weight-normal !default;
+
+$cta-font-weight: $font-weight-bold !default;
+
+$decor-weight: 2px;
+$decor-weight-heavy: $decor-weight * 2;
+$decor-weight-light: $decor-weight * .5;

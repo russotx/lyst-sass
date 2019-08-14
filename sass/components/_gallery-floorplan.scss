@@ -1,0 +1,188 @@
+
+
+.floorplan--is-active {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.floorplan--is-inactive {
+  // display: none;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  padding: 1px !important;
+}
+
+.gallery-floorplan {
+  
+  // .gallery-floorplan__options {
+  //   padding: 3em;
+  // }
+  .gallery-floorplan__nav {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include mx-wide {
+      flex-direction: column;
+    }
+    @include mx-desktop {
+      padding: 0;
+    }
+  }
+
+  .gallery-floorplan__question {
+    color: $color-4;
+    text-transform: uppercase;
+    h3 {
+      padding: 0;
+    }
+    @include mx-desktop {
+      margin-bottom: .75em !important;
+    }
+  }
+  .gallery-floorplan__triggers-wrapper {
+    width: 50%;
+    @include mx-desktop {
+      width: 70%;
+    }
+  } 
+  .gallery-floorplan__triggers {
+    // padding: 3em;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    // .et_pb_button_module_wrapper {
+    //   margin: 1em !important;
+    // }
+    @include mx-desktop {
+      flex-direction: column;
+      padding: 0;
+      // .et_pb_button_module_wrapper {
+      //   margin: 0 !important;
+      // }
+    }
+  }
+  
+  %trigger {
+    @include rfs($font-size-base);
+    @extend %button-animate;
+    font-family: $font-stack-sans-alt;
+    font-weight: $font-weight-bold;
+    padding: 1em 2em !important;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: $button-transition;
+    @include mx-desktop {
+      margin: .5em;
+      @include rfs($font-size-sm);
+      width: 16em;
+    }
+    
+  }
+  
+  .trigger--is-active {
+    @extend %trigger;
+    background: $color-secondary;
+    border: solid 1px $color-secondary;
+    color: $color-contrast;
+    
+    &:hover {
+      @extend %trigger;
+      background: $color-secondary;
+      border: solid 1px $color-secondary;
+      color: $color-contrast;
+    }
+  }
+  
+  .trigger--is-inactive {
+    @extend %trigger;
+    background: transparent;
+    border: solid 2px $color-primary;
+    color: $color-secondary;
+    
+    &:hover {
+      @extend %trigger;
+      background: $color-primary !important;
+      border-color: $color-primary !important;
+      color: $color-contrast;
+    }
+  }
+  
+  .gallery-floorplan__title {
+    display: flex;
+    flex-direction: row;
+    // combat weird phantom margin caused by Divi's clearfixes
+    overflow: hidden;
+  }
+  .gallery-floorplan__subhead {
+    @include rfs($h5-font-size, true);
+    max-width: 20em;
+    flex-grow: 3;
+    text-align: center;
+    @include mx-desktop {
+      max-width: 15em;
+    }
+  }
+  .gallery-floorplan__bar {
+    background: $color-4;
+    margin: 0;
+    padding: 0;
+    flex-grow: 2; 
+    align-self: center;
+    height: 4px;
+    width: 10% !important;
+    @include mx-desktop {
+      display: block;
+    }
+  }
+  .gallery-floorplan__floorplan {
+    max-width: 400px;
+    margin: 20px;
+    background-color: $color-primary;
+    border: solid 4px $color-primary;
+  }
+  .gallery-floorplan__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 4em;
+      justify-content: center;
+  }
+  .gallery-floorplan__floorplan {
+
+    .floorplan__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;  
+      margin: 0;
+    }
+    .floorplan__img {
+      width: 100%;
+    }
+    .floorplan__info {
+      text-align: center;
+      @include rfs($font-size-sm); 
+      background: $color-primary;
+      color: $color-contrast;
+      padding: .5em;
+    }
+    .floorplan__title {
+      @include rfs($font-size-base);
+      font-weight: $font-weight-bold;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+  }
+  @include mx-desktop {
+    padding-top: 20px;
+  }
+}

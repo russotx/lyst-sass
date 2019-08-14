@@ -1,0 +1,86 @@
+
+@mixin gform-unmargin {
+    @at-root #{&} {
+        padding-top: 0;
+    }
+    @at-root #{&} .gform_wrapper {
+        margin-top: 0;    
+        margin-bottom: 0;
+    }
+    @at-root #{&} .gform_wrapper .gform_heading {
+        margin-bottom: 0;
+    }
+    @at-root #{&} .gform_wrapper .gform_description {
+        margin-bottom: 0;
+    }
+    @at-root #{&} .gform_wrapper li.hidden_label input {
+        margin-top: 0;
+    }
+    @at-root #{&}  .gform_wrapper .top_label div.ginput_container {
+        margin-top: 0;
+    }
+    // @at-root #{&} {
+    //     .gform_wrapper ul li.gfield:first-child {
+    //         margin-top: 0;
+    //     }
+    // }
+}
+
+
+@mixin gform-wireframe($bg-color, $wire-color, $wire-width, $radius, $txt-color, $btn-color, $cta-color, $btn-position: center) {
+    text-align: center;
+    @at-root #{&} input:not([type=submit]), #{&} textarea {
+        background: $bg-color;
+        border: solid $wire-width $wire-color;
+        border-radius: $radius;
+        color: $txt-color;
+        // IE SUPPORT - don't use em units for height or padding!
+        height: 1%;
+        padding: 20px 15px 15px 20px !important;
+        font-weight: $font-weight-bold;
+    }
+    @at-root #{&}:-ms-input-placeholder {
+        color: $txt-color;
+        @include rfs($font-size-lg);
+        font-weight: $font-weight-light;
+        font-family: $subhead-font;
+        text-transform: uppercase;
+    }
+    @at-root #{&} ::placeholder {
+        color: $txt-color;
+        @include rfs($font-size-lg);
+        font-weight: $font-weight-light;
+        font-family: $subhead-font;
+        text-transform: uppercase;
+    }
+    @at-root #{&} .gform_footer {
+        text-align: $btn-position;
+        @include mx-desktop {
+            text-align: center;
+        }
+        input[type=submit] {
+            @extend %button-animate;
+            @include rfs($font-size-base);
+            background: $btn-color;
+            border-radius: 0;
+            border: none;
+            color: $cta-color; 
+            cursor: pointer;
+            font-family: $button-font;
+            font-weight: $font-weight-bold;
+            // change from em units to support IE
+            // padding: 1.2em 3em;
+            padding: 18px 60px !important;
+            text-transform: uppercase;
+            // transition: ease-in-out .2s;
+            // dropping mobile em styling to support IE, same % works fine on mobile.
+            // @include mx-phone {
+            //     padding: .7em 1em;
+            // }
+            
+            // &:hover {
+            //     transform: scale(1.05);
+            // }
+        }
+    }
+}

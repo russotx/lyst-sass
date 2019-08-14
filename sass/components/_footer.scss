@@ -1,0 +1,118 @@
+
+#main-footer .container {
+  width: 100%;
+}
+
+#footer-widgets {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__bar {
+  height: 4px;
+  background: $color-secondary;
+  width: 20%;
+  z-index: 999;
+  position: relative;
+  display: block;
+  margin: 2rem auto;
+}
+
+.footer-widget .et_pb_widget {
+  float: none;
+  margin: 0 auto;
+}
+
+.footer-widget .textwidget {
+  text-align: center;
+}
+
+.footer-widget .widget_text p {
+  @include rfs($font-size-xl);
+  font-family: $heading-font;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 100%;
+  max-width: 500px;
+}
+
+#footer-bottom #footer-info {
+  float: none;
+  text-align: center;
+}
+
+/*
+#footer-widgets {
+  padding: 0;
+  .footer-widget li:before {
+    content: none;
+  }
+  
+  .widget_text {
+    width: 80%;
+    text-align: center;
+    float: none;
+    margin: auto;
+  }
+  
+  .textwidget {
+    //background-image: linear-gradient(to right,$color-3,lighten($color-3,30%),$color-3,lighten($color-3,30%));
+    margin-bottom: 40px;
+  }
+  
+}
+
+.footer__title-box {
+    background-image: linear-gradient(to right,$color-3,lighten($color-3,30%),$color-3,lighten($color-3,30%));
+    padding-bottom: 1px;
+    width: 60%;
+    margin: 0 auto 30px auto;
+}
+
+.footer__title {
+  background-color: $color-secondary;
+  padding: 1em !important;
+  font-weight: $font-weight-bold;
+  @include rfs($font-size-base);
+  font-family: $font-stack-sans-alt;
+  text-align: center;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.footer__info {
+  background-color: $color-secondary;
+}
+
+#menu-footer-menu {
+  text-align: center;
+}
+
+.footer__logo {
+  padding: 30px;
+  width: 50%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  @include mx-phone {
+    width: 65%;
+  }
+}
+
+#menu-footer-menu {
+  @include mx-desktop {
+    display: flex;
+    flex-direction: column;
+    li {
+      border-bottom: solid 1px $color-5;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+  }
+}
+*/

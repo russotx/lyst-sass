@@ -1,0 +1,16 @@
+//--ADDING FONTS
+
+@mixin font($fam, $src, $weight) {
+  $font-type : str-slice($src,-3,-1);
+  @font-face {
+    font-family: $fam;
+    font-family: $fam;
+    @if #{$font-type} == "otf" { 
+      src: url("fonts/#{$src}") format("opentype"); 
+    } @else {
+      src: url("fonts/#{$src}");
+    } 
+    font-weight: $weight;
+  }
+}
+

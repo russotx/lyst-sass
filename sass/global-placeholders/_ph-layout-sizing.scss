@@ -1,0 +1,15 @@
+
+// options for .et_pb_text. --comment out for no override 
+%theme-text-options {
+  max-width: $text-max-width; 
+  padding: $text-vertical-spacing $text-gutter;
+}
+
+%theme-single-col-row {
+  margin-left: auto;
+  margin-right: auto;
+  .et_pb_text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

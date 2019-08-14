@@ -1,0 +1,10 @@
+//    TEMPLATE CLASSES FOR EXTENSION    
+@import 'global-placeholders/ph-typography';
+@import 'global-placeholders/ph-layout-sizing';
+
+%button-animate {
+  transition: $button-transition; 
+  &:hover {
+    transform: scale($button-hover-scale);
+  }
+}

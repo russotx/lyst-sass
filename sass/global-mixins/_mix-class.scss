@@ -1,0 +1,15 @@
+// FOR USE WITH CLASS MODIFIERS AND CLASS CREATORS 
+
+@mixin mod($modifier) {
+    @at-root #{&}--#{$modifier} {
+       @content; 
+    }
+}
+
+//----Floaters
+@mixin img-overlay($url) {
+    position: absolute;
+    @include bring-front;
+    content: url($url);
+}
+

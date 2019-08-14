@@ -1,0 +1,10 @@
+.btn--hover {
+  transition: ease-in-out .2s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.is--visible {
+  display: block !important;
+}

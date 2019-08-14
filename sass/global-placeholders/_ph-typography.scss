@@ -1,0 +1,22 @@
+%h1-size {
+  @include rfs($h1-font-size);
+}
+%h2-size {
+  @include rfs($h2-font-size);
+}
+%h3-size {
+  @include rfs($h3-font-size);
+}
+%h4-size {
+  @include rfs($h4-font-size);
+}
+%h5-size {
+  @include rfs($h5-font-size);
+}
+%h6-size {
+  @include rfs($h6-font-size);
+}
+%p-size {
+  @include rfs($p-font-size);
+}
+

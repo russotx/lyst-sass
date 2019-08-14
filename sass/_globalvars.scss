@@ -1,0 +1,14 @@
+$url-base: 'http://';
+$dir-uploads: '/wp-content/uploads';
+$url-media: '#{$url-base}#{$dir-uploads}';
+
+$button-hover-scale: 1.05;
+$button-transition: .2s;
+
+@import 'global-vars/device-vars';
+@import 'global-vars/layout-vars';
+@import 'global-vars/module-spacing-vars';
+@import 'global-vars/color-vars';
+@import 'global-vars/font-vars';
+@import 'global-vars/form-vars';
+

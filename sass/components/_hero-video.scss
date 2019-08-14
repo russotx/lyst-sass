@@ -1,0 +1,13 @@
+.hero__video-bg {
+  padding: 0 !important;
+  @include mx-desktop {
+    padding: 0 !important;
+  }
+}
+
+.hero__video-container {
+  padding: 0 !important;
+  @include mx-desktop {
+    padding: 0 !important;
+  }
+}

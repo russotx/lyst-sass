@@ -1,0 +1,31 @@
+.lyst-social-icons {
+  background-color:  $color-secondary;
+  list-style: none !important;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1em 1em 1em;
+  justify-content: center;
+  a.lyst-icon {
+    color: $color-contrast;
+    font-family: $font-fam-eticons;
+    margin: 5px;
+    @include rfs($font-size-xl);
+  }
+  .social-icons__facebook {
+    a.lyst-icon:before {
+      content: "\e093";
+    }
+  }
+  .social-icons__twitter {
+    a.lyst-icon:before {
+      content: "\e094";
+    }
+  }
+  .social-icons__instagram {
+    a.lyst-icon:before {
+      content: "\e09a";
+    }
+  }
+}
+
+

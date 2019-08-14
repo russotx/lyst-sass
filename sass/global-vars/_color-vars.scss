@@ -1,0 +1,40 @@
+
+
+// ---- CHANGE THESE PERCENTAGES TO CHANGE GLOBAL GRADIENT APPEARANCE ----
+$darker-change: 30%;
+$lighter-change: 20%;
+
+// ---- CHANGE THESE COLORS TO MATCH BRAND GUIDE -----
+
+$color-primary: #455B57;   
+$color-secondary: #ACA865;
+$color-contrast: white;
+$color-1: $color-primary;
+$color-2: $color-secondary;
+$color-3: #8AA8A3;
+$color-4: #5A857C; 
+$color-5: #7C7D7C;
+$color-6: #DE8636;
+$color-7: #424140;
+
+$color-dark: $color-secondary;
+$color-light: $color-contrast;
+$color-mute: $color-3;
+
+
+// ---- CHANGE THESE FLAGS DEPENDING ON THE BRAND COLORS ----
+$color-primary-is-light: true;
+$color-secondary-is-light: true;
+$color-contrast-is-light: true;
+
+$color-primary-darker: darken($color-primary, $darker-change);
+$color-primary-lighter: lighten($color-primary, $lighter-change);
+$color-secondary-darker: darken($color-secondary, $darker-change);
+$color-secondary-lighter: lighten($color-secondary, $lighter-change);
+
+$heading-color: $color-7;
+$subhead-color: $color-secondary;
+
+$font-color-primary: $color-7;
+$font-color-alt: $color-primary;
+$font-color-light: $color-secondary;
