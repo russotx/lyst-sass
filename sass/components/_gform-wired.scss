@@ -1,5 +1,5 @@
 .gform-wired {
-  @include gform-wireframe(transparent,$color-contrast,4px,40px,$color-contrast, #fff9f1,$color-secondary,center);
+  @include gform-wireframe(transparent,$color-contrast,4px,40px,$color-contrast, #fff9f1,$color-2,center);
   @include gform-unmargin;
   font-family: $font-stack-sans;
 }

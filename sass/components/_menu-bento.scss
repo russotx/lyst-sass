@@ -21,7 +21,7 @@
   
   .menu-bento__box {
     background: $color-5;
-    color: $color-secondary;
+    color: $color-2;
     padding: 3em;
     margin: 2em;
     max-width: 600px;
@@ -38,7 +38,7 @@
     
     &:hover {
       color: $color-contrast;
-      background: $color-primary;
+      background: $color-1;
     }
     
     .menu-bento__copy {
@@ -53,11 +53,11 @@
     }
   
     .menu-bento__cta {
-      background: $color-secondary;
+      background: $color-2;
       color: $color-contrast;
       
       &:hover {
-        background: $color-secondary !important;
+        background: $color-2 !important;
         transform: scale(1.05,1.05);
       }
       

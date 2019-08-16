@@ -18,7 +18,7 @@ header#main-header:after {
 		content: '';
 		position: absolute;
 		top: -1em;
-		background: $color-secondary;
+		background: $color-2;
 		width: 120%;
 		height: 3em;
 		left: -10%;	
@@ -92,7 +92,7 @@ header#main-header:after {
 }
 
 .mobile_menu_bar:before {
-	color: $color-secondary !important;
+	color: $color-2 !important;
 	font-size: 7em!important;
 	top: .23rem;
 }
@@ -115,12 +115,12 @@ ul#mobile_menu {
 }
 
 ul#mobile_menu li a {
-	color: $color-primary;
+	color: $color-1;
 }
 
 ul#mobile_menu li {
 	&:hover {
-		background: $color-secondary;
+		background: $color-2;
 	}
 	&:hover a {
 		color: $color-contrast;

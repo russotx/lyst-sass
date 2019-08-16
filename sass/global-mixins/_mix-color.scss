@@ -8,7 +8,7 @@
 //----gradients
 
 @mixin gradient-brand-primary($primary-direction) {
-    background-image: linear-gradient($primary-direction, $color-primary-darker, $color-primary);
+    background-image: linear-gradient($primary-direction, $color-1-darker, $color-1);
 }
 
 @mixin text-gradient-brand-primary($primary-direction) {

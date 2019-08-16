@@ -5,26 +5,43 @@ Author: Catalyst
 Version: 2.0
 Updated: 2019-08-14 
 */
-// RFS Config
+
+/* RFS Config
+ rfs-factor determines how much fonts scale based on screen size. 
+ The higher the number the more they change size 
+--------------------------------------------------------------------------------*/
+$rfs-factor: 3 !default;
 $rfs-factor: 60;
 $rfs-base-font-size: 1rem;
 
 @import 'easy-font-face-mixin';
 @import 'fonts';
 
-// RFS responsive font sizing uses calc() to make dynamic 
+/* RFS responsive font sizing package uses calc() to make dynamic font scaling
+--------------------------------------------------------------------------------*/
 @import "../node_modules/rfs/scss";
 
-// global variables for use in all files
+/* Global Variables for use in all files
+--------------------------------------------------------------------------------*/
 @import 'globalvars';
+
+/* Global Mixins and Placeholders for use in all files
+    note: some mixins and placeholders are modified by values in global variables.
+--------------------------------------------------------------------------------*/
 @import 'mixins';
 @import 'placeholders';
 
-// The Tier2 Template styles for existing landing pages etc
+/* The Tier2 Template styles for old landing pages etc
+--------------------------------------------------------------------------------*/
 // @import 'vendor/tier2template';
 
+/* Theme, Layout, and Components styles for the design
+--------------------------------------------------------------------------------*/
 @import 'theme';
 @import 'layout';
 @import 'components';
+
+/* Utility classes for use on the site to override or apply specific styles.
+--------------------------------------------------------------------------------*/
 @import 'util';
 

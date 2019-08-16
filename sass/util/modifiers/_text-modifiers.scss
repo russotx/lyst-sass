@@ -5,12 +5,12 @@
 //--h: heading 
 .h--primary {
   %headings { 
-    color : $color-primary;
+    color : $color-1;
   }
 }
 .h--secondary{
   %headings { 
-    color : $color-secondary;
+    color : $color-2;
   }
 }
 .h--contrast {
@@ -21,26 +21,26 @@
 
 //-- heading color based on background
 .bg--primary %headings {
-	color: $color-secondary;
+	color: $color-2;
 }
 
 .bg--light %headings {
-	color: $color-primary;
+	color: $color-1;
 }
 
 .bg--secondary %headings {
-	color: $color-primary;
+	color: $color-1;
 }
 
 //--sh : subhead
 .sh--primary {
   %subheads { 
-    color : $color-primary;
+    color : $color-1;
   }
 }
 .sh--secondary {
   %subheads { 
-    color : $color-secondary;
+    color : $color-2;
   }
 }
 .sh--contrast {
@@ -65,7 +65,7 @@
 }
 
 .bg--light p {
-	color: $color-primary;
+	color: $color-1;
 }
 
 .bg--secondary p {

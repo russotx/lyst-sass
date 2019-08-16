@@ -90,14 +90,14 @@
   
   .trigger--is-active {
     @extend %trigger;
-    background: $color-secondary;
-    border: solid 1px $color-secondary;
+    background: $color-2;
+    border: solid 1px $color-2;
     color: $color-contrast;
     
     &:hover {
       @extend %trigger;
-      background: $color-secondary;
-      border: solid 1px $color-secondary;
+      background: $color-2;
+      border: solid 1px $color-2;
       color: $color-contrast;
     }
   }
@@ -105,13 +105,13 @@
   .trigger--is-inactive {
     @extend %trigger;
     background: transparent;
-    border: solid 2px $color-primary;
-    color: $color-secondary;
+    border: solid 2px $color-1;
+    color: $color-2;
     
     &:hover {
       @extend %trigger;
-      background: $color-primary !important;
-      border-color: $color-primary !important;
+      background: $color-1 !important;
+      border-color: $color-1 !important;
       color: $color-contrast;
     }
   }
@@ -146,8 +146,8 @@
   .gallery-floorplan__floorplan {
     max-width: 400px;
     margin: 20px;
-    background-color: $color-primary;
-    border: solid 4px $color-primary;
+    background-color: $color-1;
+    border: solid 4px $color-1;
   }
   .gallery-floorplan__content {
       display: flex;
@@ -170,7 +170,7 @@
     .floorplan__info {
       text-align: center;
       @include rfs($font-size-sm); 
-      background: $color-primary;
+      background: $color-1;
       color: $color-contrast;
       padding: .5em;
     }

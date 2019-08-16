@@ -13,10 +13,10 @@
 // To simulate content overlapping sections without messing with margins: 
 // place this class on the row and place the row at the bottom of the section it's supposed to simulate overlapping
 .overlap__above--primary {
-  background-image: linear-gradient(180deg,transparent 0%,transparent 30%,$color-primary 30%,$color-primary 100%);
+  background-image: linear-gradient(180deg,transparent 0%,transparent 30%,$color-1 30%,$color-1 100%);
 }
 .overlap__above--secondary{
-  background-image: linear-gradient(180deg,transparent 0%,transparent 30%,$color-secondary 30%,$color-secondary 100%);
+  background-image: linear-gradient(180deg,transparent 0%,transparent 30%,$color-2 30%,$color-2 100%);
 }
 
 
@@ -52,10 +52,10 @@
 --------------------------------------------------------------------------------*/
 
 .bg--primary {
-   background-color: $color-primary; 
+   background-color: $color-1; 
 }
 .bg--secondary {
-  background-color: $color-secondary;
+  background-color: $color-2;
 }
 .bg--contrast {
   background-color:  $color-contrast;

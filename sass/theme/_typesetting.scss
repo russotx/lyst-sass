@@ -96,7 +96,7 @@ a {
 }
 
 .cta--primary {
-	background: $color-primary;
+	background: $color-1;
 	color: $color-contrast;
 	font-weight: $cta-font-weight;
 	text-transform: uppercase;
@@ -104,9 +104,9 @@ a {
 }
 
 .cta--primary-wireframe {
-	color: $color-primary;
+	color: $color-1;
 	background: transparent;
-	border: solid 1px $color-primary;
+	border: solid 1px $color-1;
 	font-weight: $cta-font-weight;
 	text-transform: uppercase;
 	padding: 1em 2em;
@@ -156,7 +156,7 @@ h2 + h1 {
 
 /* strong headings change color to stand out depending on their background */
 .bg--light %headings strong {
-	color: $color-secondary;
+	color: $color-2;
 }
 
 .bg--pattern %headings strong {

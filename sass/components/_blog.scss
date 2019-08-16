@@ -51,7 +51,7 @@
   .et_pb_post {
     max-width: 1024px;
     border: solid 3px $color-7;
-    color: $color-primary;
+    color: $color-1;
     
     @include mx-tablet {
       max-width: 100%;
@@ -65,7 +65,7 @@
   }
   
   .post-meta {
-    color: $color-secondary !important;
+    color: $color-2 !important;
     font-family: $font-stack-sans-alt;
     font-weight: bold;
     padding: 1.75rem 6% 0 6%;
@@ -75,7 +75,7 @@
   .post-content {
     padding: 0 1.75rem 1.75rem; 
     p {
-      color: $color-secondary;
+      color: $color-2;
     }
   } 
 

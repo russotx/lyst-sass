@@ -1,5 +1,5 @@
 .form-tour {
-  @include gform-wireframe($color-7, $color-secondary, 2px, 0, $color-secondary, $color-secondary, $color-7, center);
+  @include gform-wireframe($color-7, $color-2, 2px, 0, $color-2, $color-2, $color-7, center);
   @include gform-unmargin;
   margin-right: 2em;
   @include mx-desktop {
@@ -20,7 +20,7 @@
 .schedule-a-tour-form a.chosen-single {
   background: transparent !important;
   border: none !important;
-  color: $color-secondary !important;
+  color: $color-2 !important;
   @include rfs($font-size-lg);
   font-weight: normal;
   box-shadow: none !important;
@@ -28,7 +28,7 @@
 
 .chosen-container {
   background: $color-7;
-  border: solid 2px $color-secondary;
+  border: solid 2px $color-2;
   padding: .7rem;
   text-transform: uppercase;
 }
@@ -37,16 +37,16 @@
   background: $color-7;
 }
 .form-tour .chosen-drop .chose-search .chosen-search-input {
-  border: solid 1px $color-secondary;
+  border: solid 1px $color-2;
 }
 
 ul.chosen-results {
   @include rfs($font-size-lg);
-  color: $color-secondary !important;
+  color: $color-2 !important;
   background: $color-7
 }
 
 ul.chosen-results li.highlighted {
   background-image: none !important;
-  background: $color-primary !important;
+  background: $color-1 !important;
 }

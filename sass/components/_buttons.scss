@@ -18,17 +18,17 @@
 .button--primary {
   @extend %button;
   color: $color-contrast;
-  background: $color-primary;
+  background: $color-1;
 }
 
 .button--secondary {
   @extend %button;
   color: $color-contrast;
-  background: $color-secondary;
+  background: $color-2;
 }
 
 .button--alt7 {
   @extend %button;
-  color: $color-secondary;
+  color: $color-2;
   background: $color-7;
 }
