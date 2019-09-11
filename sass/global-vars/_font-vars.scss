@@ -29,6 +29,7 @@ $font-stack-script-alt: $font-fam-script-alt, $base-script-stack;
 
 $heading-font: $font-stack-serif !default;
 $subhead-font: $font-stack-sans-alt !default;
+$heading-standout-font: $font-stack-serif !default;
 $copy-font: $font-stack-sans !default;
 $fancy-font: $font-stack-script !default;
 $button-font: $font-stack-sans-alt !default;
@@ -44,25 +45,15 @@ $tagline-font: $font-stack-sans-alt !default;
 
 $font-size-base: 1rem !default;
 
-$font-change-xxs: .5 !default;
-$font-change-xs: .65 !default;
-$font-change-sm: .875 !default;
-$font-change-med: 1 !default;
-$font-change-lg: 1.25 !default;
-$font-change-xl: 1.75 !default;
-$font-change-xxl: 2.25 !default;
-$font-change-xxxl: 3.25 !default;
-$font-change-huge: 5 !default;
-
-$font-size-xxs: ($font-size-base * $font-change-xxs);
-$font-size-xs: ($font-size-base * $font-change-xs);
-$font-size-sm: ($font-size-base * $font-change-sm);
-$font-size-med: ($font-size-base * $font-change-med);
-$font-size-lg: ($font-size-base * $font-change-lg);
-$font-size-xl: ($font-size-base * $font-change-xl);
-$font-size-xxl: ($font-size-base * $font-change-xxl);
-$font-size-xxxl: ($font-size-base * $font-change-xxxl);
-$font-size-huge: ($font-size-base * $font-change-huge);
+$font-size-xxs: ($font-size-base * .5) !default;
+$font-size-xs: ($font-size-base * .65) !default;
+$font-size-sm: ($font-size-base * .875) !default;
+$font-size-med: ($font-size-base * 1) !default;
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-xl: ($font-size-base * 1.75) !default;
+$font-size-xxl: ($font-size-base * 2.25) !default;
+$font-size-xxxl: ($font-size-base * 3.25) !default;
+$font-size-huge: ($font-size-base * 5) !default;
 
 //----headings
 $headings: h1,h2,h3;

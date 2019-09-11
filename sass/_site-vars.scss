@@ -23,8 +23,16 @@ $font-color: $color-1;
 $font-color-alt: $color-1;
 $font-color-light: $color-contrast;
 
+
+/*---------------------------------------------------------------
+    Fallback Fonts
+---------------------------------------------------------------*/
+$base-sans-stack: Helvetica, Arial, Lucida, sans-serif !default;
+$base-serif-stack: Georgia, Times, "Times New Roman", serif !default;
+$base-script-stack: Impact !default;
+
 /*--------------------------------------------------------------------------------
-          FONTS
+          THEME BASE FONTS
 --------------------------------------------------------------------------------*/
 
 $font-fam-sans: "Montserrat";
@@ -36,7 +44,21 @@ $font-fam-serif-alt2: "Times New Roman";
 $font-fam-script: "Brownhill";
 $font-fam-script-alt: "Brownhill";
 
+/*--------------------------------------------------------------------------------
+      FONT STACKS
+--------------------------------------------------------------------------------*/
+
+$font-stack-sans: $font-fam-sans, $base-sans-stack;
+$font-stack-sans-alt: $font-fam-sans-alt, $base-sans-stack;
+$font-stack-sans-alt2: $font-fam-sans-alt2, $base-sans-stack;
+$font-stack-serif: $font-fam-serif, $base-serif-stack;
+$font-stack-serif-alt: $font-fam-serif-alt, $base-serif-stack;
+$font-stack-serif-alt2: $font-fam-serif-alt2, $base-serif-stack;
+$font-stack-script: $font-fam-script, $base-script-stack;
+$font-stack-script-alt: $font-fam-script-alt, $base-script-stack;
+
 $heading-font: $font-stack-serif;
+$heading-standout-font: $font-stack-sans;
 $subhead-font: $font-stack-sans-alt;
 $copy-font: $font-stack-sans;
 $fancy-font: $font-stack-script;
@@ -47,15 +69,17 @@ $tagline-font: $font-stack-sans-alt;
       FONT SIZES
 --------------------------------------------------------------------------------*/
 
-$font-change-xxs: .5;
-$font-change-xs: .65;
-$font-change-sm: .875;
-$font-change-med: 1;
-$font-change-lg: 1.25;
-$font-change-xl: 1.75;
-$font-change-xxl: 2.25;
-$font-change-xxxl: 3.25;
-$font-change-huge: 5;
+$font-size-base: 1rem;
+
+$font-size-xxs: ($font-size-base * .5);
+$font-size-xs: ($font-size-base * .65);
+$font-size-sm: ($font-size-base * .875);
+$font-size-med: ($font-size-base * 1);
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-xl: ($font-size-base * 1.75);
+$font-size-xxl: ($font-size-base * 2.25);
+$font-size-xxxl: ($font-size-base * 3.25);
+$font-size-huge: ($font-size-base * 5);
 
 //----headings
 $h1-font-size: $font-size-xxxl; 
