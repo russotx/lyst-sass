@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------------------------
+        COLORS
+--------------------------------------------------------------------------------*/
+$color-contrast: white;
+$color-1: #455B57;
+$color-2: #ACA865;
+$color-3: #8AA8A3;
+$color-4: #5A857C;
+$color-5: #7C7D7C;
+$color-6: #DE8636;
+$color-7: #424140;
+
+$color-mute: $color-3;
+
+$color-1-is-light: true;
+$color-2-is-light: true;
+$color-contrast-is-light: true;
+
+$heading-color: $color-1;
+$subhead-color: $color-1;
+
+$font-color: $color-1;
+$font-color-alt: $color-1;
+$font-color-light: $color-contrast;
+
+/*--------------------------------------------------------------------------------
+          FONTS
+--------------------------------------------------------------------------------*/
+
+$font-fam-sans: "Montserrat";
+$font-fam-sans-alt: "Gotham";
+$font-fam-sans-alt2: "Gotham";
+$font-fam-serif: "Georgia";
+$font-fam-serif-alt: "Times New Roman";
+$font-fam-serif-alt2: "Times New Roman";
+$font-fam-script: "Brownhill";
+$font-fam-script-alt: "Brownhill";
+
+$heading-font: $font-stack-serif;
+$subhead-font: $font-stack-sans-alt;
+$copy-font: $font-stack-sans;
+$fancy-font: $font-stack-script;
+$button-font: $font-stack-sans-alt;
+$tagline-font: $font-stack-sans-alt;
+
+/*--------------------------------------------------------------------------------
+      FONT SIZES
+--------------------------------------------------------------------------------*/
+
+$font-change-xxs: .5;
+$font-change-xs: .65;
+$font-change-sm: .875;
+$font-change-med: 1;
+$font-change-lg: 1.25;
+$font-change-xl: 1.75;
+$font-change-xxl: 2.25;
+$font-change-xxxl: 3.25;
+$font-change-huge: 5;
+
+//----headings
+$h1-font-size: $font-size-xxxl; 
+$h2-font-size: $font-size-xxxl; 
+$h3-font-size: $font-size-xxl; 
+
+//----subheads
+$h4-font-size: $font-size-xl;
+$h5-font-size: $font-size-lg;
+$h6-font-size: $font-size-base;$p-font-size: $font-size-base;
+
+$p-font-size: $font-size-base;
+$copy-font-size: $font-size-base;
+
+/*--------------------------------------------------------------------------------
+      FONT WEIGHTS
+--------------------------------------------------------------------------------*/
+
+$font-weight-lighter: lighter;
+$font-weight-light:   300;
+$font-weight-normal:  500;
+$font-weight-bold:    700;
+$font-weight-bolder:  bolder;
+
+$heading-font-weight: $font-weight-normal;
+$subhead-font-weight: $font-weight-normal;
+$copy-font-weight: $font-weight-normal;
+
+$cta-font-weight: $font-weight-bold;
+
+$decor-weight: 2px;
+$decor-weight-heavy: $decor-weight * 2;
+$decor-weight-light: $decor-weight * .5;
+
+/*--------------------------------------------------------------------------------
+      LAYOUT SIZES
+--------------------------------------------------------------------------------*/
+
+// main-menu-height overrides values set in the theme customizer to allow for more detailed customization
+$main-menu-height: 40px !default;
+$top-menu-height: 40px !default;
+$content-max-width: 1080px !default;
+
+$text-vertical-spacing: 3rem;
+$text-max-width: 750px;
+$text-gutter: 30px;
+
