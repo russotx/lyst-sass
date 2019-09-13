@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------------------------
+
+        ANYTHING INSIDE .logo_container 
+
+--------------------------------------------------------------------------------*/
+
+#logo { 
+	@include mx-desktop {
+		float: left;
+		max-width: 50%!important;
+		max-height: none!important;
+	}
+}

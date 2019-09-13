@@ -1,0 +1,84 @@
+
+/*--------------------------------------------------------------------------------
+
+    ONLY INCLUDE THIS FILE IF YOU WANT TO COMPLETELY OVERRIDE 
+    THE DIVI THEME CUSTOMIZER SETTINGS FOR THE MENU!!!
+    
+    ANYTHING INSIDE #et-top-navigation
+
+--------------------------------------------------------------------------------*/
+
+
+// NOTE: Divi sets top menu padding below links and above et-top-navigation by taking 
+//      the theme customizer menu height and dividing in half assigning half to padding above
+//      et-top-navigation and half below the <a> tags in the menu
+
+// any additional padding added to menu links, will affect menu height and requires offset
+$additional-menu-link-padding: 20px;
+$menu-link-hover-color: $color-contrast;
+
+
+// #main-header .container {
+//   width: 100%;
+// }
+
+// #et-top-navigation {
+//   @include mn-desktop {
+//     padding-top: ($main-menu-height / 2) - $additional-menu-link-padding !important;    
+//   }
+// }
+
+// #main-header .et_menu_container {
+//   @include menu-desktop {
+//     padding-right: 0 !important;
+//     padding-left: 0 !important;
+//   }
+// }
+
+// #top-menu {
+//   li a {
+//     @include menu-wide {
+//       font-size: $font-size-sm;
+//     }
+//     @include menu-desktop {
+//       font-size: .75rem;
+//     }
+//     @include menu-small {
+//       font-size: $font-size-xs;
+//     }
+//     @include menu-extra-small {
+//       font-size: .6rem;
+//     }
+//     transition: none;
+//     padding-bottom: $main-menu-height / 2 !important;
+//     &:hover {
+//       color: $menu-link-hover-color;
+//       opacity: 1 !important;
+//     }
+    
+//   }
+//   .menu__link--standout a {
+//     padding: $additional-menu-link-padding;
+//     background: $menu-link-standout-bg;
+//   }
+//   .sub-menu li:hover {
+//     background: $dropdown-link-hover-bg;
+    
+//     a:hover {
+//       color: $dropdown-link-hover-color !important;
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// .menu__link--standout:after {
+// 	@include mn-desktop {
+// 		content: '';
+// 		position: absolute;
+// 		top: -1em;
+// 		background: $color-2;
+// 		width: 120%;
+// 		height: 3em;
+// 		left: -10%;	
+// 	}
+// }
