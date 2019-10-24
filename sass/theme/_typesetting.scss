@@ -71,7 +71,6 @@ p {
 	@include rfs($p-font-size);
 	font-family: $copy-font;
 	font-weight: $copy-font-weight;
-	font-size: $copy-font-size;
 	color: inherit;
 }
 
