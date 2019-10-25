@@ -11,9 +11,15 @@
 
 %headings {
 	line-height: 1;
+  font-family: $heading-font;
+	font-weight: $heading-font-weight;
+	text-transform: uppercase;
 }
 %subheads {
 	line-height: 1;
+	font-family: $subhead-font;
+	font-weight: $subhead-font-weight;
+	text-transform: uppercase;
 }
 %headings + %headings {
 	margin-top: 2rem;
@@ -24,46 +30,28 @@
 h1 {
 	@include rfs($h1-font-size);
 	color: inherit; 
-	font-family: $heading-font;
-	font-weight: $heading-font-weight;
-	text-transform: uppercase;
 }
 h2 {
 	@include rfs($h2-font-size);
 	color: inherit; 
-	font-family: $heading-font;
-	font-weight: $heading-font-weight;
-	text-transform: uppercase;
 }
 h3 {
 	@include rfs($h3-font-size);
 	color: inherit; 
-	font-family: $heading-font;
-	font-weight: $heading-font-weight;
-	text-transform: uppercase;
 }
 
 //--typically subheadings
 h4 {
 	@include rfs($h4-font-size);
 	color: inherit; 
-	font-family: $subhead-font;
-	font-weight: $subhead-font-weight;
-	text-transform: uppercase;
 } 
 h5 {
 	@include rfs($h5-font-size);
 	color: inherit; 
-	font-family: $subhead-font;
-	font-weight: $subhead-font-weight;
-	text-transform: uppercase;
 }
 h6 {
 	@include rfs($h6-font-size);
 	color: inherit; 
-	font-family: $subhead-font;
-	font-weight: $subhead-font-weight;
-	text-transform: uppercase;
 }
 
 //--body copy and links
@@ -160,10 +148,6 @@ h2 + h1 {
 
 .bg--pattern %headings strong {
 	color: $color-contrast;
-}
-
-.bg--wood %headings strong {
-	color: $color-6; 
 }
 
 .bg--primary %headings strong {
