@@ -73,17 +73,12 @@ $p-font-size: $font-size-base !default;
 $copy-font-size: $font-size-base !default;
 
 //----weights
-$font-weight-lighter: lighter !default;
-$font-weight-light:   300 !default;
-$font-weight-normal:  400 !default;
-$font-weight-bold:    700 !default;
-$font-weight-bolder:  bolder !default;
 
-$heading-font-weight: $font-weight-normal !default;
-$subhead-font-weight: $font-weight-normal !default;
-$copy-font-weight: $font-weight-normal !default;
+$heading-font-weight: 400 !default;
+$subhead-font-weight: 400 !default;
+$copy-font-weight: 400 !default;
 
-$cta-font-weight: $font-weight-bold !default;
+$cta-font-weight: bold !default;
 
 $decor-weight: 2px !default;
 $decor-weight-heavy: $decor-weight * 2 !default;

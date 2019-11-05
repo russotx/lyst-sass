@@ -76,7 +76,7 @@
 .footer__title {
   background-color: $color-2;
   padding: 1em !important;
-  font-weight: $font-weight-bold;
+  font-weight: bold;
   @include rfs($font-size-base);
   font-family: $font-stack-sans-alt;
   text-align: center;

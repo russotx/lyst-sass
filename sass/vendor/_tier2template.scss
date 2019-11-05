@@ -69,12 +69,12 @@
 
 .bold, .bold p, .bold h1, .bold h2, .bold h3, .bold h4, .bold li, .bold a {
     // font-weight: 700!important;
-    font-weight: $font-weight-bold;
+    font-weight: bold;
 }
 
 .light, .light p, .light h1, .light h2, .light h3, .light h4, .light li, .light a {
     // font-weight: 300;
-    font-weight: $font-weight-light;
+    font-weight: light;
 }
 
 .text-shadow, .text-shadow p, .text-shadow h1, .text-shadow h2, .text-shadow h3, .text-shadow h4, .text-shadow li, .text-shadow a {
@@ -200,7 +200,7 @@ body .et_pb_module.cta-fullwidth a.et_pb_promo_button:hover {
 body .et_pb_module.primary-button a.et_pb_button {
     text-transform: uppercase;
     // font-weight:700;
-    font-weight: $font-weight-bold;
+    font-weight: bold;
     // color:#fff;
     color: $color-contrast;
     border:solid 2px rgba(0,0,0,0.0)!important;
@@ -1850,7 +1850,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-family: $font-stack-sans;
-    font-weight: $font-weight-bold;
+    font-weight: bold;
     // font-size: 15px;
     padding: 0 20px;
     box-sizing: border-box;

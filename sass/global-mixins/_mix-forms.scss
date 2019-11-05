@@ -37,19 +37,19 @@
         // IE SUPPORT - don't use em units for height or padding!
         height: 1%;
         padding: 20px 15px 15px 20px !important;
-        font-weight: $font-weight-bold;
+        font-weight: bold;
     }
     @at-root #{&}:-ms-input-placeholder {
         color: $txt-color;
         @include rfs($font-size-lg);
-        font-weight: $font-weight-light;
+        font-weight: light;
         font-family: $subhead-font;
         text-transform: uppercase;
     }
     @at-root #{&} ::placeholder {
         color: $txt-color;
         @include rfs($font-size-lg);
-        font-weight: $font-weight-light;
+        font-weight: light;
         font-family: $subhead-font;
         text-transform: uppercase;
     }
@@ -67,7 +67,7 @@
             color: $cta-color; 
             cursor: pointer;
             font-family: $button-font;
-            font-weight: $font-weight-bold;
+            font-weight: bold;
             // change from em units to support IE
             // padding: 1.2em 3em;
             padding: 18px 60px !important;

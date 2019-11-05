@@ -98,17 +98,11 @@ $copy-font-size: $font-size-base;
       FONT WEIGHTS
 --------------------------------------------------------------------------------*/
 
-$font-weight-lighter: lighter;
-$font-weight-light:   300;
-$font-weight-normal:  400;
-$font-weight-bold:    700;
-$font-weight-bolder:  bolder;
+$heading-font-weight: 400;
+$subhead-font-weight: 400;
+$copy-font-weight: 400;
 
-$heading-font-weight: $font-weight-normal;
-$subhead-font-weight: $font-weight-normal;
-$copy-font-weight: $font-weight-normal;
-
-$cta-font-weight: $font-weight-bold;
+$cta-font-weight: bold; 
 
 $decor-weight: 2px;
 $decor-weight-heavy: $decor-weight * 2;
